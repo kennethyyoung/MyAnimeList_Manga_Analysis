@@ -1,0 +1,23 @@
+# --------------------
+# Jupyter Notebook Files
+# --------------------
+.ipynb_checkpoints/
+
+# --------------------
+# External Data & Credentials (CRITICAL)
+# --------------------
+# Ignores the actual data files (too large for Git)
+*.csv
+*.zip
+*.parquet
+*.xlsx
+# Ignores your private Kaggle key
+kaggle.json 
+
+# --------------------
+# Python Environment
+# --------------------
+__pycache__/
+*.pyc
+.venv/
+env/
