@@ -39,6 +39,7 @@ I evaluated multiple models including Decision Trees, Random Forests, and Logist
 
 ![Feature Importance](images/11_top_intrinsic_features.png)
 *Fig 2: Top features driving the model's decisions. Positive values (Green) increase the likelihood of adaptation, while negative values (Red) significantly decrease it.*
+
 ---
 
 ### 📈 Results & Business Impact
