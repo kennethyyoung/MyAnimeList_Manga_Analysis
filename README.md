@@ -1,7 +1,7 @@
 # Identifying Franchise Potential in Manga Source Material
 **A Retrospective Classification Analysis of Community Metrics**
 
-### 📌 Project Overview
+### Project Overview
 The anime industry relies heavily on adapting existing manga into animated series, yet only a small fraction (~5-10%) of published works receive adaptations. This project builds a machine learning classification model to identify the statistical profile of manga most likely to sustain a multimedia franchise.
 
 **Goal:** To distinguish the "signal" of a commercially viable property from the noise of the general market using historical community metrics.
@@ -9,7 +9,7 @@ The anime industry relies heavily on adapting existing manga into animated serie
 
 ---
 
-### 📊 Key Findings & Insights
+### Key Findings & Insights
 * **The "Popularity" Signal:** Popularity metrics follow a Power Law distribution. Log-transforming member counts revealed a clear separation between adapted and non-adapted works, making it the strongest predictor.
 * **The "One-Shot" Penalty:** Single-volume works (One-shots) have a near-zero adaptation rate compared to serialized manga (~8%), confirming that inventory volume is a critical factor for adaptation viability.
 * **Genre Hierarchy:** *Shounen* and *Kids* demographics are adapted at nearly double the baseline rate, while *Josei* (adult women) underperforms, highlighting a commercial bias toward merchandise-friendly demographics.
@@ -20,7 +20,7 @@ The anime industry relies heavily on adapting existing manga into animated serie
 
 ---
 
-### 🛠️ Methodology
+### Methodology
 
 #### 1. Target Variable Engineering (`is_adapted`)
 Since the source dataset lacked a direct link between Manga and Anime entries, I engineered a ground-truth target variable using **Set-Based Entity Resolution**.
@@ -42,14 +42,14 @@ I evaluated multiple models including Decision Trees, Random Forests, and Logist
 
 ---
 
-### 📈 Results & Business Impact
+### Results & Business Impact
 The final model demonstrates that adaptation viability is predictable using public community metrics.
 * **Survivorship Bias Identified:** Historical data from 1990–2010 shows an inflated adaptation rate (~18%), indicating that databases prioritize archiving successful franchises from the past.
 * **Strategic Application:** This model can serve as a "First-Pass Filter" for acquisition teams, flagging high-potential works that fit the statistical profile of past hits before expensive licensing discussions begin.
 
 ---
 
-### 💻 Setup & Usage
+### Setup & Usage
 To run this analysis locally:
 
 1.  Clone the repository:
@@ -65,7 +65,7 @@ To run this analysis locally:
     jupyter notebook analysis.ipynb
     ```
 
-### 📂 File Structure
+### File Structure
 * `analysis.ipynb`: The main notebook containing all data cleaning, EDA, feature engineering, and modeling code.
 * `data/`: Directory for storing raw and processed datasets (not included in repo for size/license reasons).
 * `images/`: Exported figures used in this README.
